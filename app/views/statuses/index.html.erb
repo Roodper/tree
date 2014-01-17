@@ -8,12 +8,12 @@
 <div class="status">
   <strong><%= s.name %></strong>
   <p><%= s.content %></p>
-
+ 
   <div class="meta">
   <%= link_to time_ago_in_words(s.created_at) + " ago", s %> |
     <span class="admin">
       <%= link_to "Edit", edit_status_path(s) %> | 
-      <%= link_to "Delete", s, method: :delete, data: { confirm: "Are you sure ?"} %>
+      <%= link_to "Delete", s, method: :delete, data:{ confirm: "Are you sure ?"} %>
 
     </span>
   </div>
